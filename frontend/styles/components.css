@@ -2,9 +2,9 @@
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(15, 22, 29, 0.88);
+  background: rgba(251, 253, 252, 0.92);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(52, 70, 86, 0.85);
+  border-bottom: 2px dashed rgba(46, 60, 60, 0.52);
 }
 
 .nav-wrap {
@@ -20,7 +20,7 @@
 .brand {
   font-family: var(--font-head);
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   font-size: clamp(0.7rem, 1.4vw, 0.9rem);
   color: var(--text);
@@ -44,9 +44,9 @@
   top: 0.18rem;
   width: 0.95rem;
   height: 0.95rem;
-  border: 2px solid var(--primary);
+  border: 3px solid var(--primary);
   border-radius: 999px;
-  box-shadow: 0 0 14px rgba(0, 163, 163, 0.25);
+  box-shadow: none;
 }
 
 .brand-mark::before {
@@ -79,8 +79,8 @@
 .nav-link:focus-visible,
 .nav-link.is-active {
   color: var(--text);
-  background: rgba(0, 210, 255, 0.16);
-  border-color: rgba(0, 210, 255, 0.45);
+  background: rgba(14, 124, 123, 0.12);
+  border-color: rgba(46, 60, 60, 0.5);
 }
 
 .nav-toggle {
@@ -105,8 +105,8 @@
 }
 
 .hero-panel {
-  background: linear-gradient(155deg, rgba(0, 163, 163, 0.15), rgba(241, 143, 1, 0.1));
-  border: 1px solid var(--line);
+  background: linear-gradient(155deg, rgba(14, 124, 123, 0.08), rgba(229, 135, 47, 0.08));
+  border: 2px solid var(--line);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   box-shadow: var(--shadow);
@@ -137,7 +137,7 @@
   gap: 0.45rem;
   padding: 0.9rem 1.15rem;
   border-radius: 999px;
-  border: 1px solid transparent;
+  border: 2px solid var(--line);
   transition: transform 0.24s ease, background-color 0.24s ease, border-color 0.24s ease;
   cursor: pointer;
 }
@@ -148,35 +148,35 @@
 }
 
 .btn-primary {
-  color: #03191b;
-  background: linear-gradient(120deg, var(--primary), #69d4d4);
+  color: #103030;
+  background: linear-gradient(120deg, #b7ecea, #95ddd9);
 }
 
 .btn-secondary {
-  color: #251400;
-  background: linear-gradient(120deg, var(--secondary), #f6be72);
+  color: #3d280d;
+  background: linear-gradient(120deg, #ffe0be, #ffd2a2);
 }
 
 .btn-ghost {
   color: var(--text);
   border-color: var(--line);
-  background: rgba(13, 31, 45, 0.56);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .card {
   position: relative;
   border-radius: var(--radius-md);
-  border: 1px solid var(--line);
+  border: 2px solid var(--line);
   background:
-    linear-gradient(170deg, rgba(27, 42, 53, 0.86), rgba(20, 32, 41, 0.56)),
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.016) 0 1px, transparent 1px 18px);
+    linear-gradient(170deg, rgba(255, 255, 255, 0.98), rgba(244, 248, 246, 0.95)),
+    repeating-linear-gradient(-12deg, rgba(46, 60, 60, 0.03) 0 2px, transparent 2px 14px);
   padding: var(--space-4);
   transition: transform 0.26s ease, border-color 0.26s ease;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  border-color: rgba(0, 210, 255, 0.55);
+  border-color: rgba(14, 124, 123, 0.8);
 }
 
 .card ul {
@@ -198,8 +198,9 @@
   margin-bottom: var(--space-3);
   font-family: var(--font-head);
   font-size: 0.9rem;
-  color: #032022;
-  background: linear-gradient(140deg, var(--primary), #7fd0d0);
+  color: #113435;
+  border: 2px solid var(--line);
+  background: linear-gradient(140deg, #d3f2f0, #bfe7e3);
 }
 
 .meta-row {
@@ -221,7 +222,7 @@
 
 .logo-chip {
   font-family: var(--font-head);
-  border: 1px solid var(--line);
+  border: 2px dashed var(--line);
   border-radius: 999px;
   padding: 0.62rem 0.7rem;
   text-align: center;
@@ -251,7 +252,7 @@ td {
 th {
   font-family: var(--font-head);
   color: var(--text);
-  background: rgba(0, 163, 163, 0.1);
+  background: rgba(14, 124, 123, 0.12);
 }
 
 details {
@@ -329,9 +330,9 @@ label {
 input,
 select,
 textarea {
-  border: 1px solid var(--line);
+  border: 2px solid var(--line);
   border-radius: var(--radius-sm);
-  background: rgba(13, 31, 45, 0.72);
+  background: #ffffff;
   color: var(--text);
   padding: 0.78rem;
   font-family: var(--font-body);
@@ -345,8 +346,8 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 2px solid rgba(0, 210, 255, 0.35);
-  border-color: rgba(0, 210, 255, 0.65);
+  outline: 2px solid rgba(14, 124, 123, 0.25);
+  border-color: rgba(14, 124, 123, 0.85);
 }
 
 input:required:invalid,
@@ -396,8 +397,8 @@ textarea:required:valid {
     flex-direction: column;
     align-items: stretch;
     padding: 0.6rem 3vw 1rem;
-    background: rgba(7, 19, 28, 0.98);
-    border-bottom: 1px solid var(--line);
+    background: rgba(251, 253, 252, 0.98);
+    border-bottom: 2px dashed var(--line);
   }
 
   .site-header.nav-open .nav-links {
