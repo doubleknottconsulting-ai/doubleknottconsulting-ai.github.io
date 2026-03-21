@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | DoubleKnott Consulting Services</title>
+    <meta name="description" content="Start a transformation conversation with DoubleKnott Consulting Services advisory partners." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <nav class="nav-wrap" aria-label="Primary navigation">
+          <a class="brand" href="index.html"><span class="brand-mark"></span>DoubleKnott Consulting Services</a>
+          <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+          <div class="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="insights.html">Insights</a>
+            <a class="nav-link" href="case-studies.html">Case Studies</a>
+            <a class="nav-link is-active" href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero container">
+          <div class="hero-layout">
+            <div>
+              <p class="kicker">Engagement Intake</p>
+              <h1>Bring Us Your Toughest Operational Challenge</h1>
+              <p>
+                Share your context and we will respond with a tailored engagement hypothesis, value range, and recommended 90-day mobilization plan.
+              </p>
+              <div class="actions">
+                <a class="btn btn-primary pulse" href="mailto:engage@doubleknott.com">Email Our Partner Team</a>
+                <a class="btn btn-ghost" href="services.html">Review Service Lines</a>
+              </div>
+            </div>
+            <aside class="hero-panel">
+              <p class="kicker">Typical Response Time</p>
+              <p class="metric">48h</p>
+              <p>Partner-led response including initial value hypothesis and decision options.</p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section container">
+          <div class="contact-grid">
+            <article class="card reveal">
+              <h2>Engagement Form</h2>
+              <form class="form-grid" action="contact.html" method="get">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" required minlength="2" placeholder="Your full name" />
+                </div>
+                <div class="field">
+                  <label for="company">Company</label>
+                  <input id="company" name="company" type="text" required minlength="2" placeholder="Company name" />
+                </div>
+                <div class="field">
+                  <label for="role">Role</label>
+                  <input id="role" name="role" type="text" required placeholder="e.g., COO, VP Operations" />
+                </div>
+                <div class="field">
+                  <label for="challenge">Challenge Description</label>
+                  <textarea id="challenge" name="challenge" required minlength="25" placeholder="Describe your primary performance challenge and target outcomes."></textarea>
+                </div>
+                <div class="field">
+                  <label for="contact-method">Preferred Contact Method</label>
+                  <select id="contact-method" name="contact-method" required>
+                    <option value="">Select one</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="video">Video call</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="email">Business Email</label>
+                  <input id="email" name="email" type="email" required placeholder="name@company.com" />
+                </div>
+                <button class="btn btn-secondary" type="submit">Submit Request</button>
+              </form>
+            </article>
+
+            <aside class="card reveal reveal-delay-1">
+              <p class="kicker">Global Offices</p>
+              <h3>Where We Operate</h3>
+              <p><strong>Chicago</strong><br />227 W Monroe St, Suite 3900<br />Chicago, IL 60606</p>
+              <p><strong>Munich</strong><br />Leopoldstrasse 23<br />80802 Munich, Germany</p>
+              <p><strong>Singapore</strong><br />8 Marina View, #43-01<br />018960 Singapore</p>
+              <div class="actions">
+                <a class="btn btn-ghost" href="mailto:engage@doubleknott.com">engage@doubleknott.com</a>
+                <a class="btn btn-ghost" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="btn btn-ghost" href="tel:+13125550164">+1 (312) 555-0164</a>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div>
+            <p class="kicker">Ready to Mobilize</p>
+            <h2>Convert Intent into a Value-Creation Program</h2>
+            <p>From initial diagnostic to implementation governance, we stay accountable for outcomes and adoption.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="services.html">View Services</a>
+              <a class="btn btn-ghost" href="case-studies.html">Review Case Studies</a>
+            </div>
+          </div>
+          <div>
+            <p class="kicker">Navigate</p>
+            <div class="actions">
+              <a class="btn btn-ghost" href="index.html">Home</a>
+              <a class="btn btn-ghost" href="about.html">About</a>
+              <a class="btn btn-ghost" href="insights.html">Insights</a>
+              <a class="btn btn-ghost" href="contact.html">Contact</a>
+            </div>
+            <small>© 2026 DoubleKnott Consulting Services. Industrial transformation specialists.</small>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

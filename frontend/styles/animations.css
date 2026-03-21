@@ -1,0 +1,98 @@
+@keyframes heroRise {
+  0% {
+    opacity: 0;
+    transform: translateY(26px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes panelFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes ctaPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 163, 163, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(0, 163, 163, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 210, 255, 0);
+  }
+}
+
+@keyframes tiltGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.hero h1,
+.hero .kicker,
+.hero p,
+.hero .actions {
+  animation: heroRise 0.78s ease both;
+}
+
+.hero .kicker {
+  animation-delay: 0.08s;
+}
+
+.hero p {
+  animation-delay: 0.16s;
+}
+
+.hero .actions {
+  animation-delay: 0.24s;
+}
+
+.hero-panel {
+  animation: panelFloat 4.2s ease-in-out infinite;
+}
+
+.btn-primary.pulse,
+.pulse {
+  animation: ctaPulse 2.8s infinite;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(0, 163, 163, 0.28), rgba(241, 143, 1, 0.22), rgba(0, 163, 163, 0.28));
+  background-size: 240% 240%;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.card:hover::after {
+  opacity: 1;
+  animation: tiltGlow 2.6s linear infinite;
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.08s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.16s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.24s;
+}
