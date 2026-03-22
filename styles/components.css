@@ -102,10 +102,7 @@
 }
 
 .hero-layout {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: var(--space-5);
-  align-items: end;
+  display: block;
 }
 
 .hero-panel {
@@ -114,14 +111,16 @@
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   box-shadow: var(--shadow);
+  margin-top: var(--space-5);
+  max-width: 500px;
 }
 
 .hero h1 {
-  max-width: 100%;
+  max-width: none;
 }
 
 .hero p {
-  max-width: 100%;
+  max-width: 70ch;
 }
 
 .actions {
