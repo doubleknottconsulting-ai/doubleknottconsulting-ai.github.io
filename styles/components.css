@@ -173,6 +173,9 @@
   border: 2px solid var(--line);
   background: var(--card-bg);
   padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: transform 0.26s ease, border-color 0.26s ease;
 }
 
@@ -189,6 +192,11 @@
 
 .card li {
   margin-bottom: 0.35rem;
+}
+
+.grid-4 .card .btn {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .icon-pill {
