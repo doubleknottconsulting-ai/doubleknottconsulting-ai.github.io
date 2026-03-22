@@ -120,7 +120,8 @@
 }
 
 .hero p {
-  max-width: 70ch;
+  max-width: none;
+  text-align: justify;
 }
 
 .actions {
