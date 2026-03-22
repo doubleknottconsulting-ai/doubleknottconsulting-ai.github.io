@@ -98,7 +98,7 @@
 }
 
 .hero {
-  padding: clamp(4.2rem, 8vw, 7.4rem) 0 var(--space-7);
+  padding: clamp(2rem, 4vw, 3rem) 0 var(--space-7);
 }
 
 .hero-layout {
@@ -117,11 +117,11 @@
 }
 
 .hero h1 {
-  max-width: 15ch;
+  max-width: 100%;
 }
 
 .hero p {
-  max-width: 53ch;
+  max-width: 100%;
 }
 
 .actions {
